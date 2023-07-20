@@ -1,2 +1,4 @@
 # Ignorar archivos generados por el compilador
 *.o
+
+package-lock.json
