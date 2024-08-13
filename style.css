@@ -6,6 +6,8 @@
 
   /* standard */
   --standard-border-radius: 5px;
+  --standard-padding: 1.1rem 1.4rem;
+  --standard-border-color: #898EA4;
 
   /* Default (light) theme */
   --background: #fff;
@@ -65,11 +67,6 @@ body > * {
   grid-column: 2;
 }
 
-main,
-footer {
-  margin-top: 2rem;
-}
-
 /* Format headers */
 h1,
 h2,
@@ -115,7 +112,8 @@ a:hover {
 
 button,
 .button,
-a.button {
+a.button,
+input[type="button"] {
   background-color: var(--accent);
   color: var(--background);
   font-size: 1.6rem;
@@ -123,14 +121,52 @@ a.button {
   line-height: normal;
   border: none;
   border-radius: var(--standard-border-radius);
-  padding: 1.1rem 1.4rem;
+  padding: var(--standard-padding);
   margin: 0.8rem 0;
 }
 
 button:hover,
-.button:hover {
+.button:hover,
+input[type="button"]:hover {
   filter: brightness(1.4);
   cursor: pointer;
+}
+
+input {
+  width: 100%;
+  color: var(--text);
+  border: 1px solid var(--standard-border-color);
+  border-radius: var(--standard-border-radius);
+  padding: var(--standard-padding);
+  
+}
+
+input::placeholder {
+  color: var(--text-light);
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--standard-border-radius);
+  padding: var(--standard-padding);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+input[type="color"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* on mobile */
