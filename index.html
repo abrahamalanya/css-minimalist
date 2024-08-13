@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header style="padding: 4rem 0;">
     <h1>CSS Minimalist Test</h1>
   </header>
   <main>
-    <section style="padding-top: 4rem;">
+    <section>
       <h1>title 1</h1>
       <h2>title 2</h2>
       <h3>title 3</h3>
@@ -30,25 +30,58 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis iste id ex veniam, ea quas eos eius inventore ut consequatur nulla qui repellat deserunt nam? Delectus mollitia accusamus sequi!</p>
     </section>
     <section style="padding-top: 4rem;">
-      <input type="text" value="" placeholder="input text">
-      <input type="button" value="input button">
-      <input type="checkbox">
-      <input type="color" value="input color">
-      <input type="date">
-      <input type="datetime-local">
-      <input type="email" placeholder="input email">
-      <input type="password" placeholder="input password">
-      <input type="week">
-      <input type="url" placeholder="input url">
-      <input type="time">
-      <input type="search" placeholder="input search">
+      <label for="text">input text</label>
+      <input type="text" name="text" id="text" placeholder="input text">
+      
+      <label for="number">input number</label>
+      <input type="number" name="number" id="number" placeholder="input number">
+
+      <label for="button">input button</label>
+      <input type="button" name="button" id="button" value="input button">
+
+      <label for="color">input color</label>
+      <input type="color" name="color" id="color" value="input color">
+
+      <label for="date">input date</label>
+      <input type="date" name="date" id="date">
+
+      <label for="datetime-local">input datetime-local</label>
+      <input type="datetime-local" name="datetime-local" id="datetime-local">
+
+      <label for="email">input email</label>
+      <input type="email" name="email" id="email" placeholder="input email">
+
+      <label for="password">input password</label>
+      <input type="password" name="password" id="password" placeholder="input password">
+
+      <label for="week">input week</label>
+      <input type="week" name="week" id="week">
+
+      <label for="url">input url</label>
+      <input type="url" name="url" id="url" placeholder="input url">
+
+      <label for="time">input time</label>
+      <input type="time" name="time" id="time">
+
+      <label for="search">input search</label>
+      <input type="search" name="search" id="search" placeholder="input search">
+
+      <label for="file">input file</label>
+      <input type="file" name="file" id="file">
+
+      <label for="checkbox">input checkbox</label>
+      <input type="checkbox" name="checkbox" id="checkbox">
+    </section>
+    <section style="padding-top: 4rem;">
+      <label for="textarea">textarea</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
     </section>
     <section style="padding-top: 4rem;">
       <a href="#">link</a>
       <a href="#" class="button">link button</a>
     </section>
   </main>
-  <footer style="padding-top: 4rem;">
+  <footer style="padding: 4rem 0;">
     <h6>created by <a href="#">@abrahamalanya</a></h6>
   </footer>
 </body>
