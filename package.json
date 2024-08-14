@@ -2,9 +2,9 @@
   "name": "@abrahamalanya/css-minimalist",
   "version": "1.1.1",
   "description": "Un archivo CSS minimalista que se puede usar para diseñar una página web limpio y moderno.",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,9 +12,7 @@
   },
   "keywords": [
     "css",
-    "minimalist",
-    "front-end",
-    "web"
+    "minimalist"
   ],
   "author": "Abraham Alanya",
   "license": "MIT",
